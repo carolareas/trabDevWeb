@@ -1,0 +1,28 @@
+.container {
+    text-align: center;
+}
+
+.inputs {
+    margin: 10px;
+}
+.inputs .cpfinput {
+    margin: 10px;
+}
+.inputs .senhainput { 
+    margin: 10px;
+}
+
+
+.opcoesbtn {
+    float: right; 
+    width: 10%; 
+}
+.opcoesbtn .clienteBtn {
+    margin: 10px; 
+}
+.opcoesbtn .administradorBtn {
+     margin: 10px; 
+
+
+}
+
