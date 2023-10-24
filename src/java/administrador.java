@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author carol
  */
 @WebServlet(urlPatterns = {"/paginaInicial"})
-public class paginaInicial extends HttpServlet {
+public class administrador extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>

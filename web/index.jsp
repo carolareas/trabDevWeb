@@ -5,7 +5,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
     <head>
-        <title>Bootstrap</title>
+        <title>banco dev web</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <h1>Sistema do Banco</h1>
             <h2>Log In</h2>
             
-            <form>
+            <form action="views/cliente.jsp" method ="post">
                  <div class="opcoesbtn">
                     <button type="button" class="clienteBtn" id="clienteBtn">Cliente</button>
                     <button type="button" class="administradorBtn" id="administradorbtn">Administrador</button>
@@ -58,7 +58,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
          window.location.href = 'views/administrador.jsp';
     });
         </script>
-    </body>
+     </body>
 </html>
 
 

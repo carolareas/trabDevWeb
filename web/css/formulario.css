@@ -1,0 +1,25 @@
+.quadro {
+    background-color: #e3e3e8;
+    border: 15px solid green;
+    padding: 50px;
+    margin-top: 50px;
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.formulario {
+    text-align: center;   
+    font-weight: bold;
+}
+
+input {
+    width: 70%;
+}
+
+input[type=submit] {
+    font-weight: bold;
+    width: 100px;
+    background-color: #1a75ff;
+}

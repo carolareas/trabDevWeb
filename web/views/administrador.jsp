@@ -8,17 +8,36 @@
     </head>
     <body>
         <div class="container">
-            <h1>Área do Cliente</h1>
+            <h1>Área do administrador</h1>
             <h2>Opções</h2>
             <form>
-                <!-- Adicionar botões -->
-                <button type="button" class="btn btn-primary">Cadastrar Usuário</button>
-                <button type="button" class="btn btn-primary">Cadastrar Conta</button>
-                <button type="button" class="btn btn-primary">Emitir Saldos</button>
-                <button type="button" class="btn btn-primary">Emitir Extratos</button>
+                <button type="button" id="cadastrarUsuario" class="cadastrarUsuarioBtn">Cadastrar Usuário</button>
+                <button type="button"  id="cadastrarConta"class="cadastrarContaBtn">Cadastrar Conta</button>
+                <button type="button"  id="emitirSaldo"class="EmitirSaldoBtn">Emitir Saldos</button>
+                <button type="button"  id="emitirExtrato" class="EmitirExtratoBtn">Emitir Extratos</button>
                 
             </form>
         </div>
         <script src="bootstrap/bootstrap.bundle.min.js"></script>
+        <script>
+         document.getElementById('cadastrarUsuario').addEventListener('click', function() {
+         window.location.href = 'cadastrarUsuario.jsp';
+    });
+        </script>
+        <script>
+         document.getElementById('cadastrarConta').addEventListener('click', function() {
+         window.location.href = 'cadastrarConta.jsp';
+    });
+        </script>
+                <script>
+         document.getElementById('emitirSaldo').addEventListener('click', function() {
+         window.location.href = 'emitirSaldo.jsp';
+    });
+        </script>
+        <script>
+         document.getElementById('emitirExtrato').addEventListener('click', function() {
+         window.location.href = 'emitirExtrato.jsp';
+    });
+        </script>
     </body>
 </html>
