@@ -13,16 +13,12 @@
 }
 
 
-.opcoesbtn {
+.form-group {
     float: right; 
     width: 10%; 
 }
-.opcoesbtn .clienteBtn {
+.form-control {
     margin: 10px; 
 }
-.opcoesbtn .administradorBtn {
-     margin: 10px; 
 
-
-}
 

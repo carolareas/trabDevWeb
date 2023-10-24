@@ -18,7 +18,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <h2>Log In</h2>
             
             <form action="views/cliente.jsp" method ="post">
-                 <div class="opcoesbtn">
+                 <div class=form-group">
                     <button type="button" class="clienteBtn" id="clienteBtn">Cliente</button>
                     <button type="button" class="administradorBtn" id="administradorbtn">Administrador</button>
                 </div>
@@ -31,12 +31,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                     </select>
                    <div>
                         <label for="cpf">CPF:</label>
-                        <input type="text" class="cpfinput" id="cpf" name="cpf">
+                        <input type="text" class="form-control" id="cpf" name="cpf">
                     </div>
 
                         <div>
                             <label for="senha">Senha:</label>
-                            <input type="password" class="senhainput" id="senha" name="senha">
+                            <input type="password" class="form-control" id="senha" name="senha">
                         </div>
                     <button class="enviarbtn" type="submit">Enviar</button>
                    </div>
