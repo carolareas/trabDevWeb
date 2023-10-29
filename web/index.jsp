@@ -9,10 +9,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
-        <link href="css/home.css" rel="stylesheet" type="text/css">
+        <link href="./css/Home.css" rel="stylesheet" type="text/css">
 
     </head>
-<body>
+<body style="background-color: #beccd2">
         <div class="container">
             <h1>Sistema do Banco</h1>
             <h2>Log In</h2>
@@ -29,13 +29,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                         <option value="administrador">Administrador</option>
                         <option value="cliente">Cliente</option>
                     </select>
-                   <div>
-                        <label for="cpf">CPF:</label>
+                   <div class="form-group">
+                        <label for="cpf">CPF: </label>
                         <input type="text" class="form-control" id="cpf" name="cpf">
                     </div>
-
-                        <div>
-                            <label for="senha">Senha:</label>
+                        <div class="form-group">
+                            <label for="senha">Senha: </label>
                             <input type="password" class="form-control" id="senha" name="senha">
                         </div>
                     <button class="enviarbtn" type="submit">Enviar</button>
