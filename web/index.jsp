@@ -8,37 +8,37 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <title>banco dev web</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
-        <link href="./css/Home.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="./css/home.css" rel="stylesheet" type="text/css">
 
     </head>
-<body style="background-color: #beccd2">
-        <div class="container">
-            <h1>Sistema do Banco</h1>
-            <h2>Log In</h2>
+<body style="background-color: #E6F9FC">
+    
+        <h1 class="container" class="d-flex justify-content-center" class="align-self-center" >Sistema do Banco</h1>
+
+        <div class="container" class="d-flex justify-content-center" class="align-self-center"  >
+            <h3>Log In</h3>
             
-            <form action="views/cliente.jsp" method ="post">
-                 <div class=form-group">
-                    <button type="button" class="clienteBtn" id="clienteBtn">Cliente</button>
-                    <button type="button" class="administradorBtn" id="administradorbtn">Administrador</button>
+            <form  action="views/cliente.jsp" method ="post">
+                 <div class=form-group" >
+                    <button type="button" class="btn btn-light"  id="clienteBtn">Cliente</button>
+                    <button type="button" class="btn btn-light"  id="administradorbtn">Administrador</button>
                 </div>
                 
-                <div class="inputs">
-                    <label class= "titulo-select" for="tipoUsuario">Selecione o tipo de usuário:</label>
-                    <select class="select-usuario" id="tipoUsuario">
-                        <option value="administrador">Administrador</option>
-                        <option value="cliente">Cliente</option>
-                    </select>
-                   <div class="form-group">
-                        <label for="cpf">CPF: </label>
+                <div class="inputs" id="background_login" >
+
+                   <div class="form-group" >
+                        <b><label for="cpf">CPF: </label></b>
                         <input type="text" class="form-control" id="cpf" name="cpf">
                     </div>
-                        <div class="form-group">
-                            <label for="senha">Senha: </label>
+                        <div   class="form-group" >
+                            <b><label for="senha">Senha: </label></b>
                             <input type="password" class="form-control" id="senha" name="senha">
                         </div>
-                    <button class="enviarbtn" type="submit">Enviar</button>
+                    <div  class="text-center">
+                        <button class="btn btn-light btn-lg"  class="enviarbtn"  type="submit">Enviar</button>
                    </div>
+                    </div>
 
                     
 
@@ -46,7 +46,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </div>
 
 
-        <script src="bootstrap/bootstrap.bundle.min.js"></script>
         <script>
          document.getElementById('clienteBtn').addEventListener('click', function() {
          window.location.href = 'views/cliente.jsp';

@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Bootstrap</title>
+        <title>banco dev web</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/Page.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="./css/Page.css" rel="stylesheet" type="text/css">
 
     </head>
-    <body>
-        <div class="container">
-            <h1>Área do Cliente</h1>
-            <h2>Opções</h2>
+<body style="background-color: #E6F9FC">
+
+        <h1 class="container" class="d-flex justify-content-center" class="align-self-center" style="margin-top:60px" >Área do Cliente</h1>
+
+        <div class="container" class="d-flex justify-content-center" class="align-self-center" style="margin-top:60px"  >
+            <h3>Opções</h3>
+
+
             <form>
                 <div class="buttons">
-                    <button type="button" class="btn btn-primary">Saldos</button>
-                    <button type="button" class="btn btn-primary">Extratos</button>
-                    <button type="button" class="btn btn-primary">Realizar Depósitos</button>
-                    <button type="button" class="btn btn-primary">Saques</button>
-                    <button type="button" class="btn btn-primary">Transferências</button>
-                    <button type="button" class="btn btn-primary">Investimentos</button>
+                    <button type="button" class="btn btn-outline-info">Saldos</button>
+                    <button type="button" class="btn btn-outline-info">Extratos</button>
+                    <button type="button" class="btn btn-outline-info">Realizar Depósitos</button>
+                    <button type="button" class="btn btn-outline-info">Saques</button>
+                    <button type="button" class="btn btn-outline-info">Transferências</button>
+                    <button type="button" class="btn btn-outline-info">Investimentos</button>
                 </div>
             </form>
+    
         </div>
-        <script src="bootstrap/bootstrap.bundle.min.js"></script>
-    </body>
+</body>
 </html>

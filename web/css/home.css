@@ -1,24 +1,36 @@
-.container {
-    text-align: center;
-}
 
 .inputs {
-    margin: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
 }
-.inputs .cpfinput {
-    margin: 10px;
-}
-.inputs .senhainput { 
-    margin: 10px;
+
+enviarbtn{
+    align-content: center;
 }
 
 
-.form-group {
-    float: right; 
-    width: 10%; 
-}
 .form-control {
     margin: 10px; 
 }
 
+.form-group{
+    color:white;
+}
 
+h1 {
+    margin-bottom: 20px;
+    margin-top:60px;
+}
+
+h3 {
+    margin-bottom: 20px;
+    margin-top:60px;
+}
+
+#background_login {
+  border-radius: 25px;
+  background: #84ADB4;
+  padding: 20px;
+
+  
+}
