@@ -21,10 +21,9 @@
                 </div>
             </form>
         </div>
-        <script src="bootstrap/bootstrap.bundle.min.js"></script>
         <script>
          document.getElementById('cadastrarUsuario').addEventListener('click', function() {
-         window.location.href = 'cadastrarUsuario.jsp';
+         window.location.href = 'cadastrarConta.jsp';
     });
         </script>
         <script>

@@ -19,7 +19,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <div class="container" class="d-flex justify-content-center" class="align-self-center"  >
             <h3>Log In</h3>
             
-            <form  action="views/cliente.jsp" method ="post">
+            <form  action="./ControladorAdministrador" method ="post">
                  <div class=form-group" >
                     <button type="button" class="btn btn-light"  id="clienteBtn">Cliente</button>
                     <button type="button" class="btn btn-light"  id="administradorbtn">Administrador</button>
@@ -36,7 +36,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                             <input type="password" class="form-control" id="senha" name="senha">
                         </div>
                     <div  class="text-center">
-                        <button class="btn btn-light btn-lg"  class="enviarbtn"  type="submit">Enviar</button>
+                        <button class="btn btn-light btn-lg"  class="enviarbtn"  type="submit" name="action" value="Login" >Enviar</button>
                    </div>
                     </div>
 
@@ -45,17 +45,18 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
          </form>
         </div>
 
-
+        <!--
         <script>
          document.getElementById('clienteBtn').addEventListener('click', function() {
          window.location.href = 'views/cliente.jsp';
     });
-        </script>
+        </script>-->
         <script>
          document.getElementById('administradorbtn').addEventListener('click', function() {
          window.location.href = 'views/administrador.jsp';
     });
         </script>
+        
      </body>
 </html>
 
