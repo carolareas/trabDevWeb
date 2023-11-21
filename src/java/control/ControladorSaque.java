@@ -23,20 +23,20 @@ import model.userDAO;
  *
  * @author marcia yumi
  */
-@WebServlet(name = "ControladorDeposito", urlPatterns = {"/ControladorDeposito"})
-public class ControladorDeposito extends HttpServlet {
+@WebServlet(name = "ControladorSaque", urlPatterns = {"/ControladorSaque"})
+public class ControladorSaque extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String action = request.getParameter("action");
 
-        if ("Depositar".equals(action)) {
+        if ("Sacar".equals(action)) {
 
             String userIdDestinoStr = request.getParameter("useriddestino");
             String tipo = request.getParameter("tipo");
             String userIdOrigemStr = request.getParameter("useridorigem");
-            String valorStr = request.getParameter("valordeposito");
+            String valorStr = request.getParameter("valorsaque");
 
             int userIdDestino = Integer.parseInt(userIdDestinoStr);
             int userIdOrigem = Integer.parseInt(userIdOrigemStr);

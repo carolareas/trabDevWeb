@@ -10,9 +10,26 @@
 
     </head>
 <body style="background-color: #E6F9FC">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark"  style="background-color: #08373E">
+		<div class="container-fluid">
+                        <h4 class="navbar-brand">Bem vindo, <%= ((User)session.getAttribute("authenticatedUser")).getNome() %></h4>
 
-        <h1 class="container" class="d-flex justify-content-center" class="align-self-center" style="margin-top:60px" >Área do Cliente</h1>
+			<a class="navbar-brand" href="index.html">Início</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+				<a class="navbar-brand" href="index.jsp">Log Out
+				</a>
+			</div>
+		</div>
+	</nav>
+
+        <!-- <h1 class="container" class="d-flex justify-content-center" class="align-self-center" style="margin-top:60px" >Bem vindo, <%= ((User)session.getAttribute("authenticatedUser")).getNome() %></h1> -->
+        
         <div class="container" class="d-flex justify-content-center" class="align-self-center" style="margin-top:60px"  >
             <h3>Opções</h3>
 
@@ -22,7 +39,7 @@
                     <button type="button" class="btn btn-outline-info">Saldos</button>
                     <button type="button" class="btn btn-outline-info">Extratos</button>
                     <button type="button" class="btn btn-outline-info" onclick="toggleDepositForm()">Realizar Depósitos</button>
-                    <button type="button" class="btn btn-outline-info">Saques</button>
+                    <button type="button" class="btn btn-outline-info" onclick="toggleSaqueForm()">Saques</button>
                     <button type="button" class="btn btn-outline-info" onclick="toggleTransactionForm()">Transferências</button>
                     <button type="button" class="btn btn-outline-info" onclick="toggleInvestimentos()">Investimentos</button>
                 </div>
@@ -41,14 +58,26 @@
             </div>
                     
             <div  id="depositForm" style="display: none;">
-            <form action="../ControladorDeposit" method="POST" class="toggled">
+            <form action="../ControladorDeposito" method="POST" class="toggled">
                 <label  for="valordeposito">Valor(R$):</label>
                 <input type="number" id="valor" name="valordeposito" step="0.01" required> 
                 <input type="hidden" name="tipo" value="deposito">
                 <input type="hidden" name="useridorigem" value="<%= ((User)session.getAttribute("authenticatedUser")).getId() %>">
-                <input type="hidden" name="useriddestinoc" value="<%= ((User)session.getAttribute("authenticatedUser")).getId() %>">
+                <input type="hidden" name="useriddestino" value="<%= ((User)session.getAttribute("authenticatedUser")).getId() %>">
 
                     <input class="btn btn-light btn-lg" type="submit" name="action" value="Depositar">
+                </form>
+            </div>
+                
+            <div  id="saqueForm" style="display: none;">
+            <form action="../ControladorSaque" method="POST" class="toggled">
+                <label  for="valorsaque">Valor(R$):</label>
+                <input type="number" id="valor" name="valorsaque" step="0.01" required> 
+                <input type="hidden" name="tipo" value="saque">
+                <input type="hidden" name="useridorigem" value="<%= ((User)session.getAttribute("authenticatedUser")).getId() %>">
+                <input type="hidden" name="useriddestino" value="<%= ((User)session.getAttribute("authenticatedUser")).getId() %>">
+
+                    <input class="btn btn-light btn-lg" type="submit" name="action" value="Sacar">
                 </form>
             </div>
                 
@@ -58,12 +87,21 @@
             var transactionForm = document.getElementById('transactionForm');
             transactionForm.style.display = transactionForm.style.display === 'none' ? 'block' : 'none';
             depositForm.style.display = 'none';
+            saqueForm.style.display = 'none';
         }
         
         function toggleDepositForm() {
             var depositForm = document.getElementById('depositForm');
             depositForm.style.display = depositForm.style.display === 'none' ? 'block' : 'none';
             transactionForm.style.display = 'none';
+            saqueForm.style.display = 'none';
+        }
+        
+        function toggleSaqueForm() {
+            var saqueForm = document.getElementById('saqueForm');
+            saqueForm.style.display = saqueForm.style.display === 'none' ? 'block' : 'none';
+            transactionForm.style.display = 'none';
+            depositForm.style.display = 'none';
         }
         
 

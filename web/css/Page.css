@@ -42,3 +42,18 @@ h3 {
 
   
 }
+
+nav {
+    background-color: #08373E;
+    padding-left: 20px;
+}
+.navbar-brand {
+    font-weight: bolder;
+}
+ul.navbar-nav > li:nth-child(1) > a {
+    font-weight: 700;
+}
+.nav-link {
+    font-weight: 500;
+    color: white!important;
+}

@@ -51,7 +51,7 @@ public class ControladorTransacao extends HttpServlet {
             userDAO userDAO = new userDAO();
             userDAO.insertTransaction(newTransfer);
 
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("./views/cliente.jsp");
         }
     }
 }
